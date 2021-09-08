@@ -1,13 +1,15 @@
 import React from "react";
-import { useStore } from "./store/StoreCtx";
-import ChildComponent from "./ChildComponent";
+// import { useStore } from "./store/StoreCtx";
+import BookingForm from "./Components/BookingForm";
+import BookingList from "./Components/BookingList";
 
 function App() {
-  const { logoColor } = useStore();
+  // const { logoColor } = useStore();
   return (
     <>
-      <ChildComponent />
-      <h1 style={{ color: logoColor }}>Test App</h1>;
+      <h1>Booking Form</h1>;
+      <BookingForm />
+      <BookingList />
     </>
   );
 }

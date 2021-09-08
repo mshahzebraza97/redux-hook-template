@@ -1,13 +1,14 @@
 import React from "react";
 import { StoreProvider } from "./store/StoreCtx";
 import ReactDOM from "react-dom";
+import { initialState, bookTableReducer } from "./store/bookTableReducer";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StoreProvider>
+    <StoreProvider initialState={initialState} reducer={bookTableReducer}>
       <App />
     </StoreProvider>
   </React.StrictMode>,

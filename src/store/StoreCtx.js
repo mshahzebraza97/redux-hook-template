@@ -10,10 +10,12 @@ export const useStore = () => {
 };
 
 // Step 3: Like Step#2, it saves time and adds convenience while utilizing the store data in the components. With this wrapping becomes just like any hoc.
-export const StoreProvider = ({ children }) => {
-  const logoColor = `#ff0000`;
+export const StoreProvider = ({ children, initialState, reducer }) => {
+  const [globalState, dispatch] = React.useReducer(reducer, initialState);
 
   return (
-    <StoreCtx.Provider value={{ logoColor }}>{children}</StoreCtx.Provider>
+    <StoreCtx.Provider value={[globalState, dispatch]}>
+      {children}
+    </StoreCtx.Provider>
   );
 };
