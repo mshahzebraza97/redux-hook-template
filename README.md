@@ -9,7 +9,7 @@ This is basically an attempt to create a redux like store locally with the combo
   Following URLs may help in understanding the
 
   > This is an open-to-all template which can be used to set up a local store quickly that works like redux. It is created by following a documented tutorial.
-  > ![Read Article 1](https://yudhajitadhikary.medium.com/implementation-of-react-hooks-context-api-reducer-all-together-bf2df11070b7) , ![Read Article 2](https://hmh.engineering/using-react-contextapi-usereducer-as-a-replacement-of-redux-as-a-state-management-architecture-336452b2930e)
+  > [Read Article 1](https://yudhajitadhikary.medium.com/implementation-of-react-hooks-context-api-reducer-all-together-bf2df11070b7) , [Read Article 2](https://hmh.engineering/using-react-contextapi-usereducer-as-a-replacement-of-redux-as-a-state-management-architecture-336452b2930e)
 
 # About useReducer
 
